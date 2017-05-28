@@ -4,7 +4,7 @@
   "description": "lab1 for cs554 ",
   "main": "app.js",
   "scripts": {
-    "start": "node app/app.js",
+    "start": "nodemon app/app.js",
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/cap9090/cs554_Lab1#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "chai": "^4.0.0",
     "express": "^4.15.3",
     "mocha": "^3.4.2",
     "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
