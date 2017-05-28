@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(function(req, res, next) {
     //The first will log all request bodies, as well as the route they are requesting, and the HTTP verb they are using
     console.log("The current request is the following: ");
-    console.log("the body of this request is " + req.body);
+    console.log("the body of this request is " + JSON.stringify(req.body));
     console.log("the path of this request is " + req.path);
     console.log("the http verb of this request is " + req.method);
     next();
